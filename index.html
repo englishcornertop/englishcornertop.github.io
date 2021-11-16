@@ -1,1 +1,386 @@
-work
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>English Corner</title>
+    <!-- base:css -->
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/21.png" />
+	
+<link href="examples.css" rel="stylesheet" />
+
+<style>
+
+/*
+PDFObject appends the classname "pdfobject-container" to the target element.
+This enables you to style the element differently depending on whether the embed was successful.
+In this example, a successful embed will result in a large box.
+A failed embed will not have dimensions specified, so you don't see an oddly large empty box.
+*/
+
+.pdfobject-container {
+	width: 100%;
+	max-width: 100%;
+	height: 600px;
+	margin: 0.5em 0;
+}
+
+.pdfobject { border: solid 0px #666; margin-top:0px;}
+#results { padding: 1rem; }
+.hidden { display: none; }
+.success { color: #4F8A10; background-color: #DFF2BF; display:none;}
+.fail { color: #D8000C; background-color: #FFBABA; }
+
+.stretch-card > .card {
+    width: 100%;
+    min-width: 100%;
+    margin-top: -30px;
+	
+	.content-wrapper {
+    background: #000000;
+}
+}
+
+</style>
+	
+  </head>
+  <body>
+    <div class="container-scroller">
+		<!-- partial:partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+      <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+        <div class="container-fluid">
+          <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+            <ul class="navbar-nav navbar-nav-left">
+              <li class="nav-item ml-0 mr-5 d-lg-flex d-none">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class="nav-link count-indicator "><b>ENGLISH CORNER</b></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="index.html" class="nav-link count-indicator "><i class="mdi mdi-message-reply-text"></i></a>
+              </li>
+              <li class="nav-item nav-search d-none d-lg-block ml-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="search">
+                        <i class="mdi mdi-magnify"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="National Geographics" aria-label="search" aria-describedby="search">
+                </div>
+              </li>	
+            </ul>
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo" href="index.html"><img src="images/pngkey.com-tv-frame-png-5404050.png" alt="logo"/></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/pngkey.com-tv-frame-png-5404050.png" alt="logo"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <ul class="navbar-nav navbar-nav-right">
+				<li class="nav-item nav-profile dropdown">
+                  <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown" id="profileDropdown">
+                    <span class="nav-profile-name">Library SMPN 21 Purworejo</span>
+                    <img src="images/21.png" alt="profile"/>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                      <a class="dropdown-item">
+                        <i class="mdi mdi-settings text-primary"></i>
+                        Settings
+                      </a>
+                      <a class="dropdown-item">
+                        <i class="mdi mdi-logout text-primary"></i>
+                        Logout
+                      </a>
+                  </div>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
+              <span class="mdi mdi-menu"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <nav class="bottom-navbar">
+        <div class="container">
+            <ul class="nav page-navigation">
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="menu-title">2015</span>
+                  </a>
+                  <div class="submenu">
+                      <ul class="submenu-item">
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 01 US.pdf">Januari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 02 US.pdf">Februari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 03 US.pdf">Maret</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 04 US.pdf">April</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 05 US.pdf">Mei</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 06 US.pdf">Juni</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 07 US.pdf">Juli</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 08 US.pdf">Agustus</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 09 US.pdf">September</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 10 US.pdf">Oktober</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 11 US.pdf">November</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2015\National Geographic 2015 12 US.pdf">Desember</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="menu-title">2016</span>
+                </a>
+                  <div class="submenu">
+                      <ul class="submenu-item">
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 01 US.pdf">Januari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 02 US.pdf">Februari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 03 US.pdf">Maret</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 04 US.pdf">April</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 05 US.pdf">Mei</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 06 US.pdf">Juni</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 07 US.pdf">Juli</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 08 US.pdf">Agustus</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 09 US.pdf">September</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 10 US.pdf">Oktober</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 11 US.pdf">November</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2016\National Geographic 2016 12 US.pdf">Desember</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="menu-title">2017</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="submenu">
+                      <ul class="submenu-item">
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 01 US.pdf">Januari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 02 US.pdf">Februari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 03 US.pdf">Maret</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 04 US.pdf">April</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 05 US.pdf">Mei</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 06 US.pdf">Juni</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 07 US.pdf">Juli</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 08 US.pdf">Agustus</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 09 US.pdf">September</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 10 US.pdf">Oktober</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 11 US.pdf">November</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2017\National Geographic 2017 12 US.pdf">Desember</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="menu-title">2018</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="submenu">
+                      <ul class="submenu-item">
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 01 US.pdf">Januari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 02 US.pdf">Februari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 03 US.pdf">Maret</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 04 US.pdf">April</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 05 US.pdf">Mei</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 06 US.pdf">Juni</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 07 US.pdf">Juli</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 08 US.pdf">Agustus</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 09 US.pdf">September</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 10 US.pdf">Oktober</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 11 US.pdf">November</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 12 US.pdf">Desember</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="menu-title">2019</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="submenu">
+                      <ul class="submenu-item">
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 01 US.pdf">Januari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 02 US.pdf">Februari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 03 US.pdf">Maret</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 04 US.pdf">April</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 05 US.pdf">Mei</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 06 US.pdf">Juni</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 07 US.pdf">Juli</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 08 US.pdf">Agustus</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 09 US.pdf">September</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 10 US.pdf">Oktober</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 11 US.pdf">November</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 12 US.pdf">Desember</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="menu-title">2020</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="submenu">
+                      <ul class="submenu-item">
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 01 US.pdf">Januari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 02 US.pdf">Februari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 03 US.pdf">Maret</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 04 US.pdf">April</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 05 US.pdf">Mei</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 06 US.pdf">Juni</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 07 US.pdf">Juli</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 08 US.pdf">Agustus</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 09 US.pdf">September</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 10 US.pdf">Oktober</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 11 US.pdf">November</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 12 US.pdf">Desember</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span class="menu-title">2021</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="submenu">
+                      <ul class="submenu-item">
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2021\National Geographic 2021 01 US.pdf">Januari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2021\National Geographic 2021 02 US.pdf">Februari</a></li>
+                          <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2021\National Geographic 2021 03 US.pdf">Maret</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2021\National Geographic 2021 04 US.pdf">April</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2021\National Geographic 2021 05 US.pdf">Mei</a></li>
+						  <li class="nav-item"><a class="nav-link embed-link" href="National Geographic\2021\National Geographic 2021 06 US.pdf">Juni</a></li>
+                      </ul>
+                  </div>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- partial -->
+		<div class="container-fluid page-body-wrapper">
+			<div class="main-panel">
+				<div class="content-wrapper">
+					<div class="row mt-4">
+						<div class="col-lg-12 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-12">
+											<div id="results">
+												<div class="row text-center">
+													<div class="card-body pb-0">
+														<h2 class="font-weight-bold">English Corner  <img style="width: 200px;" src="images/pngkey.com-tv-frame-png-5404050.png" alt="logo"/>
+														</h2>
+
+														<br/><br/>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-3 grid-margin stretch-card">
+														<a class="nav-link embed-link" href="National Geographic\2021\National Geographic 2021 02 US.pdf"><img style="width:100%" src="images/cover/National Geographic 2021 02 US_Page_1.jpeg"></a>
+													</div>
+													<div class="col-lg-3 grid-margin stretch-card">
+														<a class="nav-link embed-link" href="National Geographic\2020\National Geographic 2020 10 US.pdf"><img style="width:100%" src="images/cover/National Geographic 2020 10 US_Page_1.jpeg"></a>
+													</div>
+													<div class="col-lg-3 grid-margin stretch-card">
+														<a class="nav-link embed-link" href="National Geographic\2019\National Geographic 2019 12 US.pdf"><img style="width:100%" src="images/cover/National Geographic 2019 12 US_Page_1.jpeg"></a>
+													</div>
+													<div class="col-lg-3 grid-margin stretch-card">
+														<a class="nav-link embed-link" href="National Geographic\2018\National Geographic 2018 12 US.pdf"><img style="width:100%" src="images/cover/National Geographic 2018 12 US_Page_1.jpeg"></a>
+													</div>
+												</div>
+												<div class="row text-center">
+													<div class="card-body pb-0">
+														<p>Click the book or select by year in the menu above to start reading
+														</p>
+														<br/><br/>
+													</div>
+												</div>
+											</div>
+											<div ></div>
+											<div id="pdf"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<div style="text-align:center">Copyright &copy; 2021 Perpustakaan SMPN 21 Purworejo</div>
+											<div ></div>
+											<div id="pdf"></div>
+										</div>
+									</div>
+					
+					
+				</div>
+				<!-- content-wrapper ends -->
+				<!-- partial:partials/_footer.html -->
+				<!-- partial -->
+			</div>
+			<!-- main-panel ends -->
+		</div>
+		<!-- page-body-wrapper ends -->
+    </div>
+	
+		<!-- container-scroller -->
+    <!-- base:js -->
+    <script src="vendors/base/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="js/template.js"></script>
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <script src="vendors/chart.js/Chart.min.js"></script>
+    <script src="vendors/progressbar.js/progressbar.min.js"></script>
+		<script src="vendors/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js"></script>
+		<script src="vendors/justgage/raphael-2.1.4.min.js"></script>
+		<script src="vendors/justgage/justgage.js"></script>
+    <!-- Custom js for this page-->
+    <script src="js/dashboard.js"></script>
+    <!-- End custom js for this page-->
+	
+<script src="js/pdfobject.min.js"></script>
+<script>
+
+var clickHandler = function (e){
+
+	e.preventDefault();
+
+	var pdfURL = this.getAttribute("href");
+
+	var options = {
+		pdfOpenParams: {
+			navpanes: 0,
+			toolbar: 1,
+			statusbar: 0,
+			view: "FitH"
+		}
+	};
+
+	var myPDF = PDFObject.embed(pdfURL, "#pdf", options);
+
+	var el = document.querySelector("#results");
+	el.setAttribute("class", (myPDF) ? "success" : "fail");
+	el.innerHTML = (myPDF) ? "Enjoy reading '" + pdfURL + "'!" : "Uh-oh, the embed didn't work.";
+
+};
+
+var a = document.querySelectorAll(".embed-link");
+
+for(var i=0; i < a.length; i++){
+	a[i].addEventListener("click", clickHandler);
+}
+
+
+</script>
+	
+  </body>
+</html>
